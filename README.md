@@ -1,6 +1,6 @@
 ![](https://aleen42.github.io/badges/src/javascript.svg) ![](https://aleen42.github.io/badges/src/react.svg)
 
-# Dinamic Form
+# Dynamic Form
 ### User features
 
 - Allows user to insert data in localStorage dynammicaly
