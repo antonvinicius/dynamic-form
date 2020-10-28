@@ -1,0 +1,29 @@
+.item {
+    color: white;
+    background-color: #419EAD;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+}
+
+.item .delete {
+    display: none;
+}
+
+.item:hover .delete {
+    display: block;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: #EF767A;
+}
+
+.item:hover .item-name, .item:hover .item-age, .item:hover .item-email {
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .item {
+        font-size: 12px;
+    }       
+}

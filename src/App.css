@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+.container {
+    max-width: 500px;
+    margin: 50px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.my-form {
+    background-color: #419EAD;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control {
+    margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    background-color: #96C6D7;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 3px;
+    width: 80%;
+    float: right;
+    color: black;
+    font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.my-form button {
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #EF767A;
+    padding: 10px 3px;
+    margin: auto;
+    width: 100px;
+    transition: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.my-form button:hover {
+    background-color: #FFE347;
+    color: black;
+}
+
+.titles, .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.titles {
+    margin-top: 50px;
+    background-color: #FFE347;
+}
+
+.title-age {
+    margin-left: -70px;
+}
+
+.title-email {
+    margin-right: 70px;
+}
+
+@media screen and (max-width: 375px) {
+    .titles, .item {
+        font-size: 12px;
+    }       
+
+    .title-age {
+        margin-left: -40px;
+    }
 }
